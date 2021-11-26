@@ -48,11 +48,17 @@ img[alt="eye"] {
   position: absolute;
   top: 151px;
   left: 150px;
+  opacity: 0;
   z-index: 1;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .cube {
   position: relative;
+}
+
+.cube:hover img[alt="eye"] {
+  opacity: 1;
 }
 
 .overlay {
